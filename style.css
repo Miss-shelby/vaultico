@@ -1,0 +1,242 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Manrope", sans-serif;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+.inner_container{
+    /* max-width: 1304.85px; */
+    margin: 0 auto;
+}
+span{
+    display: block;
+   
+}
+.logo img{
+    height: 23px;
+}
+.arrow-down{
+    width: 12px;
+    height: 6px;
+    margin-left: 16px;
+}
+.requestBtn{
+    display: flex;
+    align-items: center;
+}
+.btn_icon{
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+}
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 103px 30px 103px;
+    align-items: center;
+    box-shadow: 0px 4px 4px 0px #0000000D;
+    position:sticky;
+    top:0;
+    z-index: 999;
+    background-color:#fff;
+}
+.navLinks{
+    display: flex;
+}
+.home{
+    color: #065666;
+
+}
+.navLinks li {
+    display: flex;
+    font-size: 20px;
+}
+.navLinks > li+li{
+    margin-left: 54px;
+}
+.btn_primary{
+background-color: #6FC247;
+height: 75px;
+font-size: 20px;
+/* padding:24px 40px 24px 40px; */
+width: 278px;
+border-radius: 16px;
+color:#fff;
+cursor: pointer;
+border: none;
+}
+.loginBtn{
+    background-color: #ffff;
+    border:1px solid #6FC247;
+    height: 75px;
+    font-size: 20px;
+    color:#6FC247;
+/* padding:24px 40px 24px 40px; */
+  width: 278px;
+  border-radius: 16px;
+  margin-left: 32px;
+}
+.heroSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lead{
+    font-weight: 800;
+    font-size: 64px;
+    text-align: center;
+    padding-top: 64px;
+}
+.lead_text{
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    width: 971px;
+    padding-top: 32px;
+}
+.btns{
+    display: flex;
+    padding-top: 32px;
+}
+.hero-image{
+    margin-top: 64px;
+}
+.company{
+    font-weight: 800;
+    font-size: 32px;
+    text-align: center;
+    padding: 119px 0 16px 0;
+}
+.teams{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 32px;
+}
+.companyList{
+    width:1282px;
+    height:399px;
+    margin:  auto;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:repeat(3,117px) ;
+    column-gap: 18px;
+    row-gap: 24px;
+
+}
+.services{
+    background-color: #111111;
+}
+.container{
+    /* width:893px; */
+    margin: 0 auto;
+}
+.services-header{
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    color:#ffff;
+    padding-top: 72px;
+}
+.service-paragraph{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    color:#D7D7D7;
+    padding-top: 16px;
+}
+.whatWeDo{
+    display: flex;
+    align-items: center;
+    padding-top: 64px;
+    /* padding: 64px 10.5px 0 10.5px; */
+    justify-content: center;
+    /* width: 1306px; */
+    /* margin:0 auto ; */
+}
+.whatWeDo > *+*{
+    margin-left: 60.5px;
+}
+.secure{
+    font-size: 24px;
+    font-weight: 500;
+    color:#ffff;
+}
+.info{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 24px 0 72px 0;
+    color:#D7D7D7;
+}
+.article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.article-container{
+    display: flex;
+    justify-content: space-between;
+    width: 1304px;
+    height: 693px;
+    margin: 0 auto;
+}
+.article >.header {
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 69px;
+}
+.article >.info{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 16px 0 80px 0;
+    text-align:center ;
+    color:#373737;
+    width:1062px;
+}
+.articles >*+*{
+    margin-top: 24px;
+}
+.article-width{
+    width:477px;
+    height:225px;
+    padding: 32px;
+    /* border: 1px solid red; */
+}
+.article-three{
+    height: 195px;
+}
+.article-heading{
+    color: #373737;
+    font-weight: 800;
+    padding-bottom: 8px;
+    font-size: 24px;
+}
+
+.article-info{
+    font-size: 20px;
+    color:#000000;
+    font-weight: 500;
+    width: 413px;
+}
+.article-image{
+    height:693px;
+    width:731px;
+}
+.article-image img{
+    width: 100%;
+    height: 100%;
+}
+.close-btn{
+    padding: 80px 0 69px 0;
+}
