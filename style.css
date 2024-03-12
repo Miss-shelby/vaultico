@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 body{
     font-family: "Manrope", sans-serif;
@@ -16,9 +17,13 @@ a{
     /* max-width: 1304.85px; */
     margin: 0 auto;
 }
+/* NAV BAR  */
 span{
     display: block;
    
+}
+.harmburger{
+    display: none;
 }
 .logo img{
     height: 23px;
@@ -239,4 +244,195 @@ border: none;
 }
 .close-btn{
     padding: 80px 0 69px 0;
+}
+@media (max-width:840px) {
+    .navBar{
+        padding:40px;
+    }
+    .inner_container{
+        /* max-width: 840px; */
+        margin: 0 auto;
+        width:90%;
+        /* border:3px solid blue; */
+    }
+    .navLinks, .requestBtnNav{
+        display: none;
+    }
+    .harmburger{
+        display: block;
+    }
+    .lead{
+        font-size: 40px;
+    }
+    .lead_text{
+        font-size: 20px;
+        width:100%;
+    }
+    span{
+        display: inline;
+    }
+    .hero-image{
+        height:382px;
+        max-width:754px;
+    }
+    .hero-image img{
+        width: 100%;
+        height: 100%;
+    }
+    .company{
+        font-size: 24px;
+    }
+    .teams{
+        font-size: 18px;
+        /* width: 754px; */
+    }
+    .companyList{
+        width: 100%; /* Adjust the width to take full width */
+        grid-template-columns: repeat(3, 1fr); /* Change the number of columns to 2 */
+        grid-template-rows: repeat(auto-fit, minmax(80px, 1fr)); /* Adjust the rows to be responsive */
+        row-gap: 10px;
+    }
+    .companyLogo{
+        width: 100%; /* Make sure the logo takes full width of its container */
+        height: auto;
+    }
+    .companyLogo img{
+        width:100%;
+        height:100%;
+    }
+    .services-header{
+        font-size: 24px;
+    }
+    .service-paragraph{
+        font-size: 18px;
+        /* width:754px; */
+        margin: 0 auto;
+    }
+    .whatWeDo{
+        flex-direction: column;
+        justify-content: center;
+        align-items: baseline;
+    }
+    .whatWeDo > *+*{
+        margin-left: 0px;
+    }
+    .info{
+        font-size: 16px;
+    }
+    .secure{
+        font-size:18px;
+    }
+    .article >.header{
+        font-size: 24px;
+    }
+    .article >.info{
+        font-size: 18px;
+        width:100%;
+    }
+    .article-container{
+        width:100%;
+        height:369px;
+        /* flex-direction: column; */
+    }
+    .article-width{
+        width: 369px;
+        height:210px;
+        padding:0px;
+        font-size: 15px;
+    }
+    .article-image{
+        height:643px;
+        width:369px
+    }
+    .article-info{
+        width:329px;
+    }
+    .close-btn{
+        padding: 20rem 0 0 0 ;
+    }
+}
+@media (max-width:568px) {
+    .inner_container{
+        /* max-width: 840px; */
+        margin: 0 auto;
+        width:90%;
+        /* border:3px solid blue; */
+    }
+    .navBar{
+        padding:24px  32px 
+    }
+    .lead {
+        font-size: 32px;
+    }
+    .lead_text {
+        font-size: 16px;
+    }
+    .btn_primary,.loginBtn{
+        width:152px;
+        height:44px;
+        padding:12px, 8px, 12px, 8px;
+        border-radius: 8px;
+        font-size: 14px;
+    }
+    .company{
+        font-size: 20px;
+    }
+    .companyList {
+        /* width: 100%; */
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(auto-fit, minmax(80px, 1fr));
+        row-gap: 10px;
+        height:auto;
+    }
+    .teams{
+        font-size: 16px;
+    }
+    .services-header {
+        font-size: 20px;
+    }
+    .service-paragraph{
+        font-size: 16px;
+    }
+    .services{
+        height:auto;
+    }
+    .article >.header {
+        font-size: 20px;
+    }
+    .article >.info {
+        font-size: 16px;
+    }
+    .article-heading{
+        font-size: 18px;
+    }
+    .article-info{
+        font-size: 16px;
+    }
+    .article-container {
+        flex-direction: column-reverse;
+        height:auto;
+    }
+    .article-image {
+        height: 310px;
+        width: 369px;
+    }
+    .article-width{
+        width:325px;
+        height:161px;
+    }
+    .close-btn {
+        padding: 1rem 0 0 0;
+    }
+}
+@media (max-width:385px){
+    .article-image {
+        height: 310px;
+        width: 300px;
+    }
+    .article-info {
+        width: 300px;
+    }
+    .loginBtn{
+        margin-left: 15px;
+    }
 }
