@@ -61,3 +61,8 @@ const resultArr= studentArr.map((student,index,students)=>{
     };
 })
 console.log(resultArr)
+
+
+
+
+
