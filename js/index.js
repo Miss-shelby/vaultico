@@ -1,3 +1,27 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const closeMenu = document.getElementById('menu-close');
+    const menu = document.querySelector(".navMenu");
+    const openMenu = document.getElementById('harmburgerImg');
+
+    openMenu.addEventListener("click", () => {
+        console.log("Hamburger menu clicked");
+        menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+        openMenu.src = menu.style.display === 'flex' ? 'images/x.svg' : 'images/home/hamburger.png';
+        console.log("Menu is now", menu.style.display);
+        console.log("Menu icon src is now", openMenu.src);
+    });
+
+    closeMenu.addEventListener("click", () => {
+        console.log("Close menu clicked");
+        menu.style.display = 'none';
+        openMenu.src = 'images/home/hamburger.png';
+        console.log("Menu is now", menu.style.display);
+        console.log("Menu icon src is now", openMenu.src);
+    });
+});
+
+
+
 //call back function is a function that is passed as argument to another function
 const hdsStudents=['koach','sam','kosy']
 hdsStudents.forEach((index,value)=>{
@@ -61,8 +85,24 @@ const resultArr= studentArr.map((student,index,students)=>{
     };
 })
 console.log(resultArr)
+//set timeout 
+const lunch = ()=>{
+    setTimeout(()=>{
+        console.log('lunch completed')
+    },5000)
+}
+const breakFast = ()=>{
+    setTimeout(()=>{
+        console.log('breakfast completed')
+    },10000)
+}
 
-
+const hdsClass = ()=>{
+    setTimeout(()=>{
+        console.log('class completed')
+    },2000)
+}
+lunch()
 
 
 
